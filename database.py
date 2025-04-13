@@ -2,8 +2,8 @@ import sqlite3
 from datetime import date
 
 def get_db(name="main.db"):
-
     db = sqlite3.connect('main.db')
+    create_db(db)
     return db
 
 def create_table(db):
@@ -33,6 +33,6 @@ def increment_counter(db, name, event_date=None):
 
 def get_counter_data(db, name):
     cursor = db.cursor()
-    cursor.execute("""SELECT * FROM counter WHERE name = ?""", (name,))
+    cursor.execute("""SELECT * FROM tracker WHERE counterName = ?""", (name,))
     return cursor.fetchall()
 
