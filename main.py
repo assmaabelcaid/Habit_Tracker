@@ -1,4 +1,5 @@
-import questionary
+import questionar
+
 from db import get_db, habit_by_period, get_habits_name, get_counter
 from counter import Counter
 from analyse import longest_streak_all_habits, calculate_longest_streak
@@ -122,6 +123,6 @@ def delete_habit(db):
         counter.delete(db)
         print(f"Habit '{name}' deleted!")
 
-# gatito >=^v^=<
+#h gatito >=^v^=<
 if __name__ == "__main__":
     cli()
