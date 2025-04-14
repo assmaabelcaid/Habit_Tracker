@@ -6,6 +6,7 @@ from datetime import datetime
 def preload_db():
     """
     Preload the database with predefined habits and their respective increment dates.
+    gatito >=^v^=<
     """
     db = get_db()
     cursor = db.cursor()

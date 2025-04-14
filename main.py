@@ -122,6 +122,6 @@ def delete_habit(db):
         counter.delete(db)
         print(f"Habit '{name}' deleted!")
 
-
+# gatito >=^v^=<
 if __name__ == "__main__":
     cli()

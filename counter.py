@@ -32,6 +32,7 @@ class Counter:
         ----------
         db : sqlite3.Connection
             The database connection.
+            gatito >=^v^=<
         """
         cursor = db.cursor()
         cursor.execute('''INSERT INTO habits (name, description, period, creation_date)
@@ -49,6 +50,7 @@ class Counter:
             The database connection.
         increment_date : datetime, optional
             The date to use for the increment (default is None, which uses the current date and time).
+            gatito >=^v^=<
         """
         cursor = db.cursor()
         if incremented_date is None:
@@ -68,6 +70,7 @@ class Counter:
         ----------
         db : sqlite3.Connection
             The database connection.
+            gatito >=^v^=<
         """
         cursor = db.cursor()
         cursor.execute('''DELETE FROM counters WHERE habit_id = ?''', (self.id,))
@@ -81,6 +84,7 @@ class Counter:
         ----------
         db : sqlite3.Connection
             The database connection.
+            gatito >=^v^=<
         """
         cursor = db.cursor()
         cursor.execute('''DELETE FROM habits WHERE id = ?''', (self.id,))
