@@ -1,4 +1,4 @@
-import questionar
+import questionary
 
 from db import get_db, habit_by_period, get_habits_name, get_counter
 from counter import Counter
