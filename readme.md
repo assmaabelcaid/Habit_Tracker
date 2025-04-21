@@ -5,7 +5,7 @@ Introducing a Habit Tracking App project, because it's slay.
 
 ## What is it?
 
-This App was programmed with Python. It's a simple Command Line Interface (CLI) App designed to track your to-do list. 
+This App was programmed with Python. It's a simple Command Line Interface (CLI) App designed to track your habits. 
 You can intuitively create, complete, update, delete, and monitor your tasks with ease. 
 
 ## How to install it?
