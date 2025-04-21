@@ -1,15 +1,12 @@
-# Habit-Tracker-App
+# Habit Tracker
 
 Introducing a Habit Tracking App project, because it's slay.
  
 
-
 ## What is it?
 
-This App was programmed with Python.
-It's a simple Command Line Interface (CLI) App designed to track your to-do list. 
-Follow the prompts to add and complete your habits.
-Create, complete, update, delete, and monitor your tasks with ease. 
+This App was programmed with Python. It's a simple Command Line Interface (CLI) App designed to track your to-do list. 
+You can intuitively create, complete, update, delete, and monitor your tasks with ease. 
 
 ## How to install it?
 
@@ -25,13 +22,13 @@ pip install -r requirements.txt
 
 ## Load the database:
 
-To load the Database with 1 month of data for testing purposes, run:
+In order to give you a test case where you can analyse pre-existing habits, run:
 
 ```shell
 python preload.py
 ```
 
-## Usage:
+## How it works:
 
 1. Run `python main.py` to start the App.
 
@@ -68,19 +65,21 @@ python preload.py
 
 ### Deleting a Habit
 
-Run the application and select "Delete Habit".
-Select the habit you want to delete.
-The habit will be removed from the database.
+1. Run the application and select "Delete Habit".
+2. Select the habit you want to delete.
+3. The habit will be removed from the database.
 
 ## Example Habits
 
-The application comes with the following predefined habits for testing purpose:
-
-* study (Daily)
-* read (Daily)
-* gaming (Daily)
-* sport (Daily)
-* laundry (Weekly)
+This program comes with a test case of predefined habits that can be used for testing purpose:
+### Daily:
+* water the plants
+* pray 
+* clean the kitchen stove
+* exercise
+* MOURN THE DEATH OF THE POPE 
+### Weekly:
+* do the laundry
 
 
 
@@ -96,10 +95,11 @@ The `test_project.py` module is designed to automate testing of the habit tracki
 ensuring that the core features like creating, incrementing, resetting, and deleting habits work correctly, 
 and that database operations are performed as expected.
 
-Run the test using the following command:
-
 Run the more detailed test using the following command:
 
 ```shell
-python pytest -v
+pytest -v test_project.py
 ```
+That's it! Hope you have fun!!
+
+*Assmaa Belcaid*
