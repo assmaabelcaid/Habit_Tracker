@@ -42,16 +42,16 @@ def cli():
 
 # Guides the user through the process of creating a new habit
 def create_habit(db):
-    name = questionary.text("What's the name of your new habit?").ask()
+    name = questionary.text("Give a title for your new habit:").ask()
 
     if get_counter(db, name):   # error handling when creating an existing habit
         print("This habit already exists.")
     else:
-        desc = questionary.text("How do you wanna describe your habit?").ask()
-        per = questionary.select("Is this a Daily or a Weekly habit?", choices=["Daily", "Weekly"]).ask()
+        desc = questionary.text("Describe your new habit").ask()
+        per = questionary.select("Daily or Weekly?", choices=["Daily", "Weekly"]).ask()
         counter = Counter(name, desc, per)
         counter.store(db)
-        print(f"Habit '{name}' created!")
+        print(f"Habit '{name}' Created!")
 
 
 # Guides the user through incrementing a habit's counter
