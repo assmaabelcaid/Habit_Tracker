@@ -28,7 +28,7 @@ pip install -r requirements.txt
 To load the Database with 1 month of data for testing purposes, run:
 
 ```shell
-python preload_db.py
+python preload.py
 ```
 
 ## Usage:
